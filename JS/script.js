@@ -1,6 +1,6 @@
 let canvas = document.getElementById("snake");
 let context = canvas.getContext("2d");
-let box = 32;
+let box   = 32;
 let snake = [];
 snake[0] = {
     x: 8 * box,
@@ -27,6 +27,7 @@ function criarCobrinha(){
 function drawFood(){
     context.fillStyle = "red";
     context.fillRect(food.x, food.y, box, box);
+     
 }
 
 document.addEventListener('keydown', update);
